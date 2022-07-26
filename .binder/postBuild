@@ -1,0 +1,23 @@
+git lfs install
+
+python -m kestrel_jupyter_kernel.setup
+
+git clone https://github.com/opencybersecurityalliance/data-bucket-kestrel.git
+
+cp data-bucket-kestrel/stix-bundles/*.json /tmp/
+
+git clone https://github.com/opencybersecurityalliance/kestrel-analytics.git
+
+cp data-bucket-kestrel/GeoLite2/GeoLite2-City.mmdb kestrel-analytics/analytics/piniponmap/
+
+rm -rf data-bucket-kestrel
+
+mkdir -p .config/kestrel
+
+cp kestrel-analytics/pythonanalytics_sample.yaml .config/kestrel/pythonanalytics.yaml
+
+git clone https://github.com/opencybersecurityalliance/kestrel-huntbook.git
+
+cd kestrel-huntbook
+
+jupyter trust */*.ipynb
