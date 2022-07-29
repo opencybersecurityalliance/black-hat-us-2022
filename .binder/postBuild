@@ -2,8 +2,6 @@ git lfs install
 
 git clone https://github.com/horus-squad-ec/openc2-lycan-python.git
 
-pip install openc2-lycan-python
-
 python -m kestrel_jupyter_kernel.setup
 
 git clone https://github.com/opencybersecurityalliance/data-bucket-kestrel.git
