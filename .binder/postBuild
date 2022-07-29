@@ -18,7 +18,7 @@ cp kestrel-analytics/pythonanalytics_sample.yaml .config/kestrel/pythonanalytics
 
 git clone https://github.com/opencybersecurityalliance/kestrel-huntbook.git
 mv kestrel-huntbook/blackhat22/* ./
-mv .stixshifter.yaml .config/kestrel/
+mv stixshifter.yaml .config/kestrel/
 rm -rf kestrel-huntbook
 
 jupyter trust *.ipynb
