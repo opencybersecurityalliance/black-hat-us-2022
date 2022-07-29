@@ -1,5 +1,0 @@
-nt_to_investigate = GET network-traffic FROM stixshifter://{{ source }}
-    WHERE [network-traffic:dst_ref.value = '{{ ipv4_connection.dst_addr }}']
-    START t'2021-10-17T00:00:00Z' STOP t'2021-10-18T00:00:00Z'
-
-APPLY python://exfil_modeling ON nt_to_investigate
