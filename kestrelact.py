@@ -52,7 +52,7 @@ class KestrelHuntbookActuator(object):
         return False
 
     def _getHuntbookInfo(self):
-        with open("huntflows/huntbooks.conf") as f:
+        with open("huntbooks.conf") as f:
             d = json.load(f)
         return d
 
