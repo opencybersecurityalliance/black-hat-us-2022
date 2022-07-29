@@ -17,7 +17,8 @@ from kestrel_datasource_stixshifter.config import ENV_VAR_PREFIX
 
 from oc2 import custom
 
-CMD_PAIRS = {"investigate": []}
+CMD_PAIRS = {"investigate": [],
+             "query": []}
 #Kestrel some new fields in OC2
 # args: huntargs
 # args: returnvars
