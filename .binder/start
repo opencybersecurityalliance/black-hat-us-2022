@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#python consumer.py
+python consumer.py &
 
 export KESTREL_STIXSHIFTER_CONFIG=./stixshifter.yaml
 
