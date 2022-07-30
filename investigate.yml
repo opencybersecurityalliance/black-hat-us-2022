@@ -1,4 +1,4 @@
 ---
 default_huntargs:
   source: server
-huntflowdir: ./kestrel-huntbook/blackhat22
+huntflowdir: ./demo/templates
