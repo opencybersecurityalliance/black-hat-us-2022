@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#KestrelAct Flask consumer
+python consumer.py &
+
+pushd /tmp/stix-bundles
+python -m http.server 6001 &
+popd
+
+exec "$@"
