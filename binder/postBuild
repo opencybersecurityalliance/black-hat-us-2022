@@ -1,14 +1,14 @@
-git lfs install
-
 git clone https://github.com/horus-squad-ec/openc2-lycan-python.git
 
 pip install ./openc2-lycan-python
+
+git lfs install
 
 python -m kestrel_jupyter_kernel.setup
 
 git clone https://github.com/opencybersecurityalliance/data-bucket-kestrel.git
 
-cp data-bucket-kestrel/stix-bundles/*.json /tmp/
+mv data-bucket-kestrel/stix-bundles /tmp/
 
 git clone https://github.com/opencybersecurityalliance/kestrel-analytics.git
 
@@ -21,7 +21,8 @@ mkdir -p .config/kestrel
 cp kestrel-analytics/pythonanalytics_sample.yaml .config/kestrel/pythonanalytics.yaml
 
 git clone https://github.com/opencybersecurityalliance/kestrel-huntbook.git
+mv kestrel-huntbook/blackhat22/* demo/
+mv demo/stixshifter.yaml .config/kestrel/
+rm -rf kestrel-huntbook
 
-cd kestrel-huntbook
-
-jupyter trust */*.ipynb
+jupyter trust demo/*.ipynb
