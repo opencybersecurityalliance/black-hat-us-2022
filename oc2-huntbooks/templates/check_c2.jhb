@@ -1,0 +1,12 @@
+# input suspicious C2 IP
+c2ip = NEW ipv4-addr ["{{ ipv4_net }}"]
+
+
+# C2 process discovery on Windows
+traffic = GET network-traffic FROM stixshifter://{{ source }}
+              WHERE [network-traffic:dst_ref.value = c2ip.value]
+              START t'2022-07-01T00:00:00Z' STOP t'2022-08-01T00:00:00Z'
+              
+proc = FIND process CREATED traffic
+
+DISP proc ATTR pid, name, command_line
