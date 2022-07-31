@@ -1,4 +1,4 @@
 ---
 default_huntargs:
-  source: server
-huntflowdir: ./demo/templates
+  source: bh22-linux-192.168.56.91
+huntflowdir: demo/templates

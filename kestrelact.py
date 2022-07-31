@@ -1,7 +1,7 @@
 import json
 import yaml
 import logging
-import os.path
+import os, os.path
 import copy
 
 import openc2
@@ -101,7 +101,8 @@ class KestrelHuntbookActuator(object):
     def _investigate(self, cmd, **kwargs):
         basedir = self.config.get('huntflowdir', os.path.join(os.path.dirname(__file__), 'huntflows'))
         fullpath = os.path.abspath(os.path.join(basedir, cmd.actuator.huntbook))
-
+        if not os.path.isabs(basedir):
+            basedir = os.path.join(os.getcwd(), basedir)
         huntflow = ''
         logger.info(f"Trying to load huntfile: {fullpath}")
         # Check to see if we're trying to break out of a huntbook root

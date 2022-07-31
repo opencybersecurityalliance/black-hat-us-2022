@@ -25,6 +25,9 @@ mv kestrel-huntbook/blackhat22/* demo/
 mv kestrel-huntbook/config/stixshifter.yaml .config/kestrel/
 rm -rf kestrel-huntbook
 
-mv oc2kestrel.ipynb demo/
+
+mv oc2kestrel.ipynb "demo/4. Calling Kestrel via OpenC2.ipynb"
+cp -r /home/jovyan/oc2 /srv/conda/envs/notebook/lib/python3.7/site-packages/.
+cp huntbooks/* demo/templates/.
 
 jupyter trust demo/*.ipynb
