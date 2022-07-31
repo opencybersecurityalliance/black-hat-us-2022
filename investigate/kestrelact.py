@@ -100,6 +100,7 @@ class KestrelHuntbookActuator(object):
 
     def _investigate(self, cmd, **kwargs):
         basedir = self.config.get('huntflowdir', os.path.join(os.path.dirname(__file__), 'huntflows'))
+        basedir = os.path.expanduser(basedir)
         fullpath = os.path.abspath(os.path.join(basedir, cmd.actuator.huntbook))
         if not os.path.isabs(basedir):
             basedir = os.path.join(os.getcwd(), basedir)
