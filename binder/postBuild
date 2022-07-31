@@ -28,7 +28,7 @@ mv kestrel-huntbook/config/stixshifter.yaml .config/kestrel/
 rm -rf kestrel-huntbook
 
 mv oc2 `python3 -c 'import sysconfig; print(sysconfig.get_paths()["purelib"]+"/")'`
-mv oc2-huntbook/* demo/
-rm -rf oc2-huntbook
+mv oc2-huntbooks/* demo/
+rm -rf oc2-huntbooks
 
 jupyter trust demo/*.ipynb
