@@ -1,3 +1,5 @@
+mkdir demo
+
 git clone --branch dev https://github.com/horus-squad-ec/openc2-lycan-python.git
 
 pip install ./openc2-lycan-python
