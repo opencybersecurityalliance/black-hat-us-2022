@@ -25,9 +25,8 @@ mv kestrel-huntbook/blackhat22/* demo/
 mv kestrel-huntbook/config/stixshifter.yaml .config/kestrel/
 rm -rf kestrel-huntbook
 
-
-mv oc2kestrel.ipynb "demo/4. Calling Kestrel via OpenC2.ipynb"
-cp -r /home/jovyan/oc2 /srv/conda/envs/notebook/lib/python3.7/site-packages/.
-cp huntbooks/* demo/templates/.
+mv oc2 `python3 -c 'import sysconfig; print(sysconfig.get_paths()["purelib"]+"/")'`
+mv oc2-huntbook/* demo/
+rm -rf oc2-huntbook
 
 jupyter trust demo/*.ipynb

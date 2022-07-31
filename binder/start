@@ -1,10 +1,13 @@
 #!/bin/bash
 
-#KestrelAct Flask consumer
-python consumer.py &
-
+# Kestrel data sources
 pushd /tmp/stix-bundles
 python -m http.server 6001 &
+popd
+
+# KestrelAct Flask consumer
+pushd investigate
+python consumer.py &
 popd
 
 exec "$@"
