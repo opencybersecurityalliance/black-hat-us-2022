@@ -6,6 +6,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on `Keep a Changelog`_.
 
+1.0.2 (2022-08-25)
+==================
+
+Changed
+-------
+
+- Typo fixes in huntbooks.
+
 1.0.1 (2022-08-22)
 ==================
 
