@@ -6,6 +6,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on `Keep a Changelog`_.
 
+1.0.3 (2022-09-12)
+==================
+
+Added
+-----
+
+- Slides.
+
 1.0.2 (2022-08-25)
 ==================
 
