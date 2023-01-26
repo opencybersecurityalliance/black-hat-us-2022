@@ -6,6 +6,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on `Keep a Changelog`_.
 
+1.0.6 (2023-01-26)
+==================
+
+Changed
+-------
+
+- refresh binder service with kestrel-lang 1.5.6 for improved auto-complete
+
 1.0.6 (2023-01-11)
 ==================
 
