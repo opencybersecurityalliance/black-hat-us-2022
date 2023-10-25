@@ -8,7 +8,7 @@ pip install ./openc2-lycan-python
 
 git lfs install
 
-python -m kestrel_jupyter_kernel.setup
+kestrel_jupyter_setup
 
 git clone https://github.com/opencybersecurityalliance/data-bucket-kestrel.git
 
