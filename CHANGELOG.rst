@@ -6,6 +6,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on `Keep a Changelog`_.
 
+1.0.11 (2023-10-25)
+===================
+
+Changed
+-------
+
+- refresh binder service with kestrel-jupyter 1.8.1
+
 1.0.10 (2023-07-13)
 ===================
 
